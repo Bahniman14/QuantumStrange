@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+
+
+body, html {
+            background-image: url('Time.jpg'); /* Replace 'background.png' with your PNG file path */
+            background-size: cover;
+            /* background-position: center; */
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            background-position: left top;
+}
+#cursor {
+    height: 2vh;
+    width: 2vh;
+    /* background-color: #95c11e; */
+    background-color: rgb(204, 255, 0);
+    border-radius: 50%;
+    position: fixed;
+    z-index: 5;
+    transition: all linear 0.1s;
+  }
+#cursor-blur {
+    height: 50vh;
+    width: 50vh;
+    background-color: rgba(150, 193, 30, 0.3);
+    border-radius: 50%;
+    position: fixed;
+    filter: blur(80px);
+    z-index: 2;
+    transition: all linear 0.4s;
+  }
+.nav {
+    padding: 1vh;
+    margin: 0.5vh;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.logo {
+    color: #D8B6A4;
+    font-size: larger;
+    font-family: 'Cormorant', serif;
+    font-weight: 900;
+}
+
+.content {
+    flex-grow: 1;
+    display: flex;
+    /* align-items: center; */
+    /* justify-content: flex-end */
+    
+}
+.space{
+    width: 140vh;
+}
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@200&display=swap');
+
+.bold{
+    font-weight: 900;
+}
+.heading{
+    text-align: center;
+    font-weight: 900;
+    text-decoration: underline;
+    color: #D8B6A4;
+    margin-bottom: 1vh;
+}
+.story {
+    flex-grow: 1;
+    margin: 0.5vh;
+    padding: 1vh;
+    font-size: 3vh;
+    line-height: 1.6;
+    color: #EEEBDD;
+    font-family:'Barlow Condensed', sans-serif;
+    z-index: 6;
+
+    
+}
+/* .part0{} */
+
+
+.part1{
+    margin: 2vh;
+    padding-left: 5vh;
+
+}
+.part2{
+    margin: 2vh;
+    padding-left: 10vh;
+
+}
+.part3{
+    margin: 1vh;
+    padding-left: 15vh;
+    font-size: 3vh;
+    color: #D8B6A4;
+}
+.part4{
+    margin: 1vh;
+    /* padding-left: 15vh; */
+    text-align: center;
+    font-size: medium;
+}
+.conect{
+    margin: 2vh;
+    width: 22vh;
+    height: 8vh;
+    background-color: #EEEBDD;
+    border-radius: 5vh;
+    cursor: pointer;
+    font-size: x-large;
+    color: #D8B6A4;
+    margin-left: 43%;
+    transition: transform 0.3s, background-color 0.3s, color 0.3s;
+    z-index: 4;
+  }
+  
+  .conect:hover {
+    transform: scale(1.08);
+    background-color: #ece4c2;
+    color: #630000;
+  }
+
+.conect.clicked {
+    transform: scale(1.07);
+    background-color: #DAFFFB;
+    color: #176B87;
+}
+  
+
+
